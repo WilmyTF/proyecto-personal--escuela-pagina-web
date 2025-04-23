@@ -15,9 +15,9 @@ Este es un proyecto completamente personal por lo que tinen muchos errores.
 ## Requisitos del Sistema
 
 - PHP 7.4 o superior
-- MySQL 5.7 o superior
+- postgresql 15 o superior
 - Servidor web Apache con mod_rewrite habilitado
-- Extensión PHP para MySQL
+- Extensión PHP para postgresql
 - Extensión PHP para manejo de archivos
 
 ## Estructura del Proyecto
