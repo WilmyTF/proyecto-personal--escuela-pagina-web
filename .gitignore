@@ -1,0 +1,33 @@
+# Archivos de configuración local
+config/local.php
+.env
+
+# Directorios de archivos subidos
+uploads/
+img/
+
+# Archivos de log
+error.log
+*.log
+
+# Archivos de caché
+cache/
+*.cache
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de dependencias
+vendor/
+node_modules/
+
+# Archivos de compilación
+*.min.js
+*.min.css 

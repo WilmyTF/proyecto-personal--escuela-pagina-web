@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #45a049;
+    --background-color: #fff5eb;
+    --border-color: #ddd;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.modal-documentos {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    color: var(--text-color);
+    font-size: 1.5em;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-button:hover {
+    color: #333;
+}
+
+.documentos-requeridos {
+    margin-bottom: 20px;
+}
+
+.documentos-requeridos ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.documentos-requeridos li {
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.area-carga {
+    margin: 20px 0;
+}
+
+.dropzone {
+    border: 2px dashed var(--border-color);
+    border-radius: 5px;
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropzone.drag-hover {
+    border-color: var(--primary-color);
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.dropzone p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.nota {
+    margin: 20px 0;
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.btn-adjuntar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-adjuntar:hover {
+    background-color: var(--secondary-color);
+}
+
+.icon {
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .modal-documentos {
+        width: 95%;
+        margin: 10px;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+
+    .dropzone {
+        padding: 20px;
+    }
+} 

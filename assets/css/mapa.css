@@ -1,0 +1,128 @@
+.container-mapa {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.mapa-interactivo {
+    background-color: #4CAF50; /* El color verde que se muestra en tu boceto */
+    min-height: 500px;
+    position: relative;
+}
+
+.area-seleccionable {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.area-seleccionable:hover {
+    background-color: #ddd;
+}
+
+.info-planta, .info-personal {
+    background-color: #f5f5f5;
+    padding: 15px;
+}
+
+.botones-accion {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn-reporte {
+    background-color: #ff0000;
+    color: white;
+}
+
+.btn-guardar {
+    background-color: #0000ff;
+    color: white;
+}
+
+.contenedor-principal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-superior {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    align-items: center;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.campo input,
+.campo select {
+    padding: 5px;
+}
+
+.contenido-principal {
+    display: flex;
+    flex: 1;
+}
+
+.area-mapa {
+    flex: 1;
+    background-color: #4CAF50; /* Color verde del mapa */
+    position: relative;
+}
+
+.panel-derecho {
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+
+.responsables textarea {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.personal table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.personal th,
+.personal td {
+    padding: 5px;
+}
+
+.personal input {
+    width: 100%;
+}
+
+.botones {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.btn-reporte {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+}
+
+.btn-guardar {
+    background-color: #0000ff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+}
+
+.info-planta {
+    margin-left: auto;
+} 

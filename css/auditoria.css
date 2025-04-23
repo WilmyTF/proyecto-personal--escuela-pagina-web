@@ -1,0 +1,77 @@
+/* Estilos para la página de auditoría */
+
+.estado-activo {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.estado-inactivo {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Estilos para filtros */
+.filtro-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filtro-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.filtro-container a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para las tarjetas de inicializadores */
+.inicializador-card {
+    transition: all 0.3s ease;
+}
+
+.inicializador-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.inicializador-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Animaciones para las alertas */
+.alert {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+    }
+    
+    .tab {
+        margin-bottom: 5px;
+    }
+    
+    .inicializador-header {
+        flex-direction: column;
+    }
+    
+    .inicializador-header span {
+        margin-top: 5px;
+    }
+    
+    .filtro-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+} 

@@ -1,0 +1,352 @@
+/* Estilos para la página de detalles del reporte */
+
+/* Encabezado del reporte */
+.reporte-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    margin-bottom: 15px;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.btn-back:hover {
+    color: #0d6efd;
+}
+
+.reporte-id {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.reporte-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tipo-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: #555;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.area-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #e3f2fd;
+    color: #1565c0;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.area-badge i {
+    font-size: 0.9rem;
+}
+
+/* Contenedor principal */
+.reporte-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Sección de información del reporte */
+.reporte-info {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.reporte-section {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.reporte-section:last-child {
+    border-bottom: none;
+}
+
+.reporte-titulo {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.reporte-autor, .reporte-actualizacion {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.reporte-descripcion {
+    line-height: 1.6;
+    color: #333;
+    white-space: pre-line;
+}
+
+/* Sección de ubicación */
+.reporte-area {
+    margin-bottom: 10px;
+}
+
+.reporte-area p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.area-map {
+    margin-top: 15px;
+    height: 200px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-style: italic;
+}
+
+/* Imágenes */
+.reporte-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.imagen-item {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+.imagen-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.imagen-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Sidebar del reporte */
+.reporte-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+/* Formulario de cambio de estado */
+.btn-block {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Historial de cambios */
+.historial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.historial-item {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    font-size: 0.9rem;
+}
+
+.historial-fecha {
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+.historial-cambio {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.status-badge.mini {
+    padding: 3px 8px;
+    font-size: 0.75rem;
+}
+
+.historial-usuario {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.historial-comentario {
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+    border-left: 3px solid #ddd;
+    margin-top: 5px;
+    white-space: pre-line;
+}
+
+/* Sección de comentarios */
+.comentarios-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.comentario-form {
+    margin-bottom: 30px;
+}
+
+.no-comentarios {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.comentarios-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comentario-item {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.comentario-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.comentario-usuario {
+    font-weight: 500;
+    color: #333;
+}
+
+.comentario-fecha {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.comentario-texto {
+    line-height: 1.5;
+    white-space: pre-line;
+}
+
+/* Modal de imágenes */
+.imagen-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.imagen-modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.imagen-modal-content img {
+    display: block;
+    max-width: 100%;
+    max-height: 90vh;
+}
+
+.imagen-modal-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .reporte-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .reporte-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .reporte-imagenes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .comentario-header {
+        flex-direction: column;
+    }
+    
+    .historial-cambio {
+        flex-wrap: wrap;
+    }
+    
+    .imagen-modal-content img {
+        max-height: 80vh;
+    }
+} 
